@@ -1,0 +1,26 @@
+function [next_config]=Test_Joint_Limits(next_config,Config,Je,V,dt,max_speed)
+% The function checks whether the next configuration of the robot is within
+% the Joint_limit or not.If it is not in the limit, the function calculates
+% the control(u,theta-dot) in such a way that the next configuration is not violated
+Joint_limit=[1,0.5,1];%The limits have been set only for 2nd,3rd and 4th angles of the 5R.It was done by checking the angles with scence 3 in V-REP 
+L=0; 
+for i=5:7
+  if next_config(1,i)>=Joint_limit(1,i-4)
+    Je(:,i+1)=zeros(6,1);%If the joint limit is exceeded,then the corresponding Jacobian is set to zero.
+    L=1;
+    A=zeros(3,3);
+  end 
+end
+if L==1 %i.e,if the joint limits are execeeded(L==1,shows that the for loop has been entered.)
+     u= pinv(Je,0.0001)*V;%the control is calculated again
+     for j=1:5
+     speed(1,j)=u(4+j,1);
+     end
+     for k=1:4
+     speed(1,k+5)=u(k,1);
+     end
+    next_config=next_state(Config,speed,dt,max_speed);
+    next_config=Test_Joint_Limits(next_config,Config,Je,V,dt,max_speed);
+end
+end
+% Please note that this function does not guarantee that all the three joint angles are within their limit.Most of the times it is sufficient for one of them to be off their limit   
