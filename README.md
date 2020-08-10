@@ -10,6 +10,8 @@ next_state,Trajectory_Generator,matrix_to_vector,feedback_control,Control,Test_J
 
 Results:
 
+Videos of my simulation can be found under the results directory
+
 ![newTask](https://user-images.githubusercontent.com/56476887/85314929-cf78f300-b4d7-11ea-8ba9-5b6c2aea2bf1.png)
 
 ### Overshoot because of the values of PID
