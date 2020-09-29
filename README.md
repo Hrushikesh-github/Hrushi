@@ -2,6 +2,9 @@
 youBot is Mobile 5R robot on an omniwheel robot, I have written few programs in MATLAB to manipulate the mobile manipulator using the V-REP simulator.
 This is a capstone project in the specialization [Modern Robotics, Motion Planning and Control](https://www.coursera.org/specializations/modernrobotics)
 
+<img width="400" alt="youbot" src="https://user-images.githubusercontent.com/56476887/94597342-192d6280-02ab-11eb-9de7-051eff086b6b.png">
+![axes](https://user-images.githubusercontent.com/56476887/94597633-6f020a80-02ab-11eb-96db-8c171d258461.png)
+
 The 'control' code controls the mobile robot and it uses functions written in files named 'next state','trajectory generator',
 'feedback contol' and other functions. Detailed description of each is mentioned in respective files.
 
