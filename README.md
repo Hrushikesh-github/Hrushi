@@ -30,3 +30,5 @@ Overshoot because of the values of PID
 ![Best](https://user-images.githubusercontent.com/56476887/85314963-dbfd4b80-b4d7-11ea-9ec5-7158e50d3657.png)
 
 
+Similar implementation was done with a 5R robot in mechatronics lab, in our campus. [Video](https://iitgoffice-my.sharepoint.com/:v:/g/personal/kyathari_iitg_ac_in/EZ1cMgPbIJNGg7QNJe_FVYYBsHUZhNhupjsacUw0I9ck5g)
+However, because of the frequency of signals sent from Arduino, and poor quality of motors, there are a lot of jitters present.
