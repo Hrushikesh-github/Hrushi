@@ -1,4 +1,7 @@
 ## Mobile Manipulation of youBot
+
+![robotics_capstone](https://github.com/Hrushikesh-github/Mobile-Manipulation-of-YouBot/assets/56476887/540abf83-8557-4163-a224-86b23172bf37)
+
 youBot is Mobile 5R robot on an omniwheel robot, I have written few programs in MATLAB to manipulate the mobile manipulator using the V-REP simulator.
 This is a capstone project in the specialization [Modern Robotics, Motion Planning and Control](https://www.coursera.org/specializations/modernrobotics)
 
@@ -16,7 +19,7 @@ next_state,Trajectory_Generator,matrix_to_vector,feedback_control,Control,Test_J
 
 ## Results:
 
-Videos of my simulation can be found [here](https://drive.google.com/drive/folders/1X04_qlfhq0yZ_v_NTAelq3jnIdfCnfK-?usp=sharing)
+Videos of all my simulation can be found [here](https://drive.google.com/drive/folders/1X04_qlfhq0yZ_v_NTAelq3jnIdfCnfK-?usp=sharing)
 
 # The joint values error from the desired trajectory for different PID values
 
